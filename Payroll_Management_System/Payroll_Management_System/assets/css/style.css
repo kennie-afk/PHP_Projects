@@ -1,0 +1,206 @@
+/*--------------------------------------------------------------
+# General Styles
+--------------------------------------------------------------*/
+body {
+  background: url('../images/chocolate.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: transparent !important;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 15px auto;
+}
+
+.testimonials .owl-nav, .testimonials .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.testimonials .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(to right, chocolate, offwhite) !important;
+}
+
+.testimonials .owl-dot.active {
+  background: linear-gradient(to right, chocolate, offwhite) !important;
+}
+
+@media (max-width: 767px) {
+  .testimonials .testimonial-wrap {
+      padding-left: 0;
+  }
+  .testimonials .testimonial-item {
+      padding: 30px;
+      margin: 15px;
+  }
+  .testimonials .testimonial-item .testimonial-img {
+      position: static;
+      left: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info {
+  width: 100%;
+  background: transparent !important;
+}
+
+.contact .info i {
+  font-size: 20px;
+  background: linear-gradient(to right, chocolate, offwhite);
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #2c4964;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #4b7dab;
+}
+
+.contact .info .email, .contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: linear-gradient(to right, chocolate, offwhite);
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: linear-gradient(to right, chocolate, offwhite);
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: linear-gradient(to right, chocolate, offwhite);
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  color: #444444;
+  font-size: 14px;
+  background: transparent !important;
+  position: absolute;
+  bottom: 0;
+}
+
+nav#sidebar {
+  height: 100%;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  width: 250px;
+  background: url('../images/payroll2.jpg') no-repeat;
+  background-size: cover;
+}
+
+a.nav-item {
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  border: 1px solid rgba(0,0,0,.125);
+  background-color: #000000c4;
+  color: #989898;
+  font-weight: 600;
+}
+
+a.nav-item:hover, .nav-item.active {
+  background: linear-gradient(to right, chocolate, offwhite);
+  color: #fffafa;
+}
+
+main#view-panel {
+  margin-left: 250px; 
+  width: calc(100% - 250px);
+  margin-top: 3.5rem;
+  padding: .5em;
+}
+
+.toast {
+  display: none;
+  min-width: 20vw;
+}
+
+.toast.show {
+  display: block;
+  opacity: 1;
+  position: fixed;
+  z-index: 99999999;
+  margin: 20px;
+  right: 0;
+  top: 3.5rem;
+}
+
+.unselectable {
+  z-index: 99;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: smaller;
+  color: #000000cf;
+  font-style: italic;
+}
